@@ -1,15 +1,30 @@
 <!doctype html>
 <html lang="en">
-<head>
+<head> <img
+  src="tobias_logo_circle.png.PNG"
+  alt="Tobias Transportation LLC Logo"
+  style="
+    width:130px;
+    max-width:50vw;
+    display:block;
+    margin:14px 0 12px;
+    filter: drop-shadow(0 16px 26px rgba(0,0,0,.55));
+  "
+>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Tobias Transportation LLC | Houston, TX</title>
   <meta name="description" content="Tobias Transportation LLC provides general freight, last-mile delivery, and contract routes in Houston, TX and surrounding areas." />
   <style>
     :root{
-  --purple:#4b1f63;
-  --gold:#c9a24d;
-  --dark:#1e1e1e;
+  :root{
+  --purple:#4B1F7A;      /* royal purple */
+  --purple2:#2A0F45;     /* deep purple */
+  --gold:#D4AF37;        /* rich gold */
+  --gold2:#B8891A;       /* darker gold for depth */
+  --ink:#0E0B14;         /* near-black */
+  --paper:#FFFFFF;
+}
 }
 
 header{
@@ -17,13 +32,44 @@ header{
   color:#fff;
 }
 
-h1, h2, h3{
+h1, h1{
+  letter-spacing:.3px;
+  margin:10px 0 8px;
+  font-size:36px;
+  line-height:1.05;
+  color:var(--gold);
+  text-shadow: 0 8px 18px rgba(0,0,0,.55);
+}
+
+header p{
+  color:rgba(255,255,255,.86);
+}h2, h3{
   color:var(--gold);
 }
 
 .badge{
   border-color:var(--gold);
   color:var(--gold);
+}.badge{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  color:rgba(255,255,255,.92);
+  border:1px solid rgba(212,175,55,.55);
+  background: rgba(14,11,20,.35);
+  backdrop-filter: blur(6px);
+}
+
+.pill{
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:999px;
+  font-size:13px;
+  color:rgba(255,255,255,.92);
+  border:1px solid rgba(212,175,55,.40);
+  background: rgba(14,11,20,.28);
+  backdrop-filter: blur(6px);
 }
 
 a.btn.primary{
@@ -34,12 +80,63 @@ a.btn.primary{
 a.btn{
   border-color:var(--gold);
   color:var(--gold);
+}a.btn{
+  display:inline-block;
+  padding:11px 16px;
+  border-radius:12px;
+  text-decoration:none;
+  border:1px solid rgba(212,175,55,.55);
+  color:var(--gold);
+  background: rgba(14,11,20,.25);
+  transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
 }
+
+a.btn.primary{
+  color:#12091f;
+  border-color: rgba(212,175,55,.95);
+  background: linear-gradient(135deg, var(--gold), var(--gold2));
+  box-shadow: 0 10px 22px rgba(0,0,0,.35);
+}
+
+a.btn:active{ transform: scale(.98); }
 
 .card{
   border-color:rgba(201,162,77,.35);
 }
+header{
+  position:relative;
+  padding:34px 18px 26px;
+  overflow:hidden;
+  color:#fff;
+  border-bottom:1px solid rgba(212,175,55,.28);
+  background:
+    radial-gradient(900px 420px at 15% 10%, rgba(75,31,122,.55), transparent 60%),
+    radial-gradient(720px 380px at 85% 25%, rgba(212,175,55,.22), transparent 55%),
+    linear-gradient(135deg, var(--ink), var(--purple2));
+}
 
+header::before{
+  content:"";
+  position:absolute;
+  inset:-80px;
+  background:url("tobias_logo_circle.png.PNG") no-repeat center;
+  background-size:min(520px, 92vw);
+  opacity:0.14;                 /* stronger but still classy */
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,.55));
+  pointer-events:none;
+}
+
+header::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  opacity:.9;
+}
+
+header .wrap{position:relative;}
 footer{
   border-top:1px solid rgba(201,162,77,.35);
 }
