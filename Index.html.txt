@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tobias Transportation LLC | Houston, TX</title>
+  <meta name="description" content="Tobias Transportation LLC provides general freight, last-mile delivery, and contract routes in Houston, TX and surrounding areas." />
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#111;background:#fff}
+    header{padding:28px 18px;border-bottom:1px solid #eee}
+    .wrap{max-width:980px;margin:0 auto}
+    .badge{display:inline-block;padding:6px 10px;border:1px solid #ddd;border-radius:999px;font-size:13px}
+    h1{margin:10px 0 6px;font-size:34px;line-height:1.1}
+    h2{margin:0 0 12px}
+    h3{margin:0 0 6px}
+    p{margin:0;color:#333;line-height:1.55}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid #111}
+    a.btn.primary{background:#111;color:#fff}
+    section{padding:22px 18px;border-top:1px solid #f0f0f0}
+    .grid{display:grid;gap:14px}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+    .card{border:1px solid #eee;border-radius:14px;padding:16px}
+    .small{font-size:13px;color:#666}
+    label{display:block;font-size:13px;margin:10px 0 6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:10px;font-size:14px}
+    button{margin-top:12px;padding:10px 14px;border:0;border-radius:10px;background:#111;color:#fff;font-size:14px;cursor:pointer}
+    footer{padding:18px;color:#666;font-size:13px}
+    .contactline{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .pill{display:inline-block;padding:6px 10px;border:1px solid #eee;border-radius:999px;font-size:13px;color:#333}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <span class="badge">General Freight • Last Mile • Contract Routes</span>
+      <h1>Tobias Transportation LLC</h1>
+      <p>Fast. Professional. On Time. Reliable pickup, clear communication, and dependable delivery.</p>
+
+      <div class="cta">
+        <a class="btn primary" href="#quote">Get a Quote</a>
+        <a class="btn" href="#services">Services</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+
+      <div class="contactline">
+        <span class="pill">📍 Houston, TX & surrounding areas</span>
+        <a class="pill" href="tel:+17083070957">📞 708-307-0957</a>
+        <a class="pill" href="mailto:Tobiastransportationllc@gmail.com">✉️ Tobiastransportationllc@gmail.com</a>
+      </div>
+
+      <p class="small" style="margin-top:10px;">
+        Available for local and regional freight support. Ask about recurring lanes and contract work.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>General Freight</h3>
+          <p>Reliable pickup and delivery for palletized freight and boxed shipments with status updates.</p>
+        </div>
+        <div class="card">
+          <h3>Last-Mile Delivery</h3>
+          <p>Local delivery support for retailers, warehouses, and businesses throughout the Houston area.</p>
+        </div>
+        <div class="card">
+          <h3>Contract Routes</h3>
+          <p>Recurring routes and dedicated lanes for consistent, professional service agreements.</p>
+        </div>
+        <div class="card">
+          <h3>Professional Communication</h3>
+          <p>Clear ETAs, pickup/delivery confirmations, and proof of delivery when required.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <h2>Request a Quote</h2>
+      <p class="small">Fill this out and we’ll respond with availability and pricing.</p>
+
+      <!-- Free form-to-email service: FormSubmit. Replace the action email if you ever change it. -->
+      <form action="https://formsubmit.co/Tobiastransportationllc@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Quote Request - Tobias Transportation LLC">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <!-- Optional: after submit redirect (update to your GitHub Pages URL after you publish) -->
+        <!-- <input type="hidden" name="_next" value="https://YOURUSERNAME.github.io/YOURREPO/"> -->
+
+        <div class="grid">
+          <div class="card">
+            <h3>Shipment Details</h3>
+            <label>Pickup City/State</label>
+            <input name="pickup" required placeholder="e.g., Houston, TX">
+
+            <label>Delivery City/State</label>
+            <input name="delivery" required placeholder="e.g., Katy, TX">
+
+            <label>Pickup Date/Time Window</label>
+            <input name="pickup_time" placeholder="e.g., 02/08, 9am–12pm">
+
+            <label>Commodity</label>
+            <input name="commodity" placeholder="e.g., general freight">
+
+            <label>Weight / Pallets</label>
+            <input name="weight_pallets" placeholder="e.g., 1,200 lbs / 2 pallets">
+          </div>
+
+          <div class="card">
+            <h3>Your Contact Info</h3>
+            <label>Your Name</label>
+            <input name="name" required placeholder="Full name">
+
+            <label>Phone</label>
+            <input name="phone" placeholder="Best call-back number">
+
+            <label>Email</label>
+            <input name="email" required placeholder="Best email for the quote">
+
+            <label>Notes</label>
+            <textarea name="notes" rows="6" placeholder="Dock details, appointment info, special instructions, etc."></textarea>
+
+            <button type="submit">Send Quote Request</button>
+            <p class="small" style="margin-top:10px;">
+              Prefer to call? <a href="tel:+17083070957">708-307-0957</a>
+            </p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><b>Phone:</b> <a href="tel:+17083070957">708-307-0957</a></p>
+        <p><b>Email:</b> <a href="mailto:Tobiastransportationllc@gmail.com">Tobiastransportationllc@gmail.com</a></p>
+        <p><b>Service Area:</b> Houston, TX and surrounding areas</p>
+        <p class="small" style="margin-top:10px;">
+          For fastest quotes, include pickup/delivery city, date/time window, commodity, and weight/pallet count.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    © <span id="y"></span> Tobias Transportation LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
